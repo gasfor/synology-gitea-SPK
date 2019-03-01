@@ -123,6 +123,7 @@ mkdir -p "$project_tmp/package/docker"
 
 if [ -f "docker/$gitea_target_package_name_escaped-$gitea_target_package_version.tar.xz" ]; then
     cp -rf "docker/$gitea_target_package_name_escaped-$gitea_target_package_version.tar.xz" "$project_tmp/package/docker/$gitea_target_package_name_escaped-$gitea_target_package_version.tar.xz"
+else echo "$gitea_target_package_name_escaped-$gitea_target_package_version.tar.xz not exist"
 fi
 
 ########################################################################################################################
